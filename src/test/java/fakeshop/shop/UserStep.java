@@ -53,6 +53,8 @@ public class UserStep {
         String actualQuantity = quantityInput.getAttribute("value");
         Assert.assertEquals("Liczba produktów w koszyku jest nieprawidłowa!",
                 expectedQuantity.toString(), actualQuantity);
+
+        driver.quit();
     }
 
 }
